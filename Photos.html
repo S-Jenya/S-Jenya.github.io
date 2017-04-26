@@ -118,27 +118,26 @@
 <script src="js/imagesloaded.pkgd.min.js"></script>	
 
 <script src="js/jquery.bxslider.min.js"></script>
-<script type="text/javascript">
-			$(document).ready(function(){
-		  $('.bxslider').bxSlider({
+<script>
+	$(document).ready(function(){
+		$('.bxslider').bxSlider({
 		  	auto:true
-		  });
 		});
+	});
 </script>
 
-<script>
+<script src="js/jquery-1.11.2.min.js"></script>	
+	<script>
 		$('.menu-icon').bind('click', function() {
    	 		$('.container4').toggleClass('show-menu');
    			$('.container4').toggleClass('active');
-   			
 		});
 	</script>	
 
-<script>
+	<script>
 		$('.menu-icon').bind('click', function() {
    	 		$('.menu').toggleClass('show-menu');
-   			$('.menu').toggleClass('active');
-   			
+   			$('.menu').toggleClass('active');	
 		});
 	</script>
 
