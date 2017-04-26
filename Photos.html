@@ -21,28 +21,11 @@
 <body>  
 
 
-	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-	    <ul class="nav navbar-nav">
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Меню <b class="caret"></b></a>
-          <ul class="dropdown-menu">
-          	<li><a href="index.html">Главная страница</a></li>
-            <li class="divider"></li>
-            <li><a href="Ecology.html">Экология в изобретениях Николы Тесла</a></li>
-            <li class="divider"></li>
-            <li><a href="histori.html">Историческая справка</a></li>
-            <li class="divider"></li>
-            <li><a href="invention.html">Изобретения</a></li>
-            <li class="divider"></li>
-			<li><a href="Photos.html">Галерея</a></li>	
-          </ul>
-        </li>
-      </ul>
-	</nav>
+	<div class="menu-icon"><p>Меню</p></div>
 
 <div class="container4">
 	<div class="container-fluid">
-	<h3>Галерея
+	<h3>Nikola Tesla
 <p>Избранные рисунки и фотографии великого ученого  - Николы Теслы. Здесь представлены все самые лучшие рабоы. </h3>
 
 	<ul class="bxslider">
@@ -112,21 +95,27 @@
 			<br>Плагин Animate
 		</div>
 	</footer>
+
+<ul class="menu">
+          <li><a href="index.html">Главная страница</a></li>
+            <li class="divider"></li>
+            <li><a href="Ecology.html">Экология в изобретениях Николы Тесла</a></li>
+            <li class="divider"></li>
+            <li><a href="histori.html">Историческая справка</a></li>
+            <li class="divider"></li>
+            <li><a href="invention.html">Изобретения</a></li>
+            <li class="divider"></li>
+            <li><a href="Photos.html">Галерея</a></li>
+      	</ul>
+
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-<script src="js/jquery-1.11.2.min.js"></script>
+
 <script src="js/jquery.magnific-popup.min.js"></script>	
 <script src="js/bootstrap.min.js"></script>
 <script src="js/common.js"></script>
 <script src="js/common_masonry.js"></script>
 <script src="js/masonry.pkgd.min.js"></script>
 <script src="js/imagesloaded.pkgd.min.js"></script>	
-
-	<script src="js/animate-css.js"></script>
-	<script src="js/waypoints.min.js"></script>
-
-<script>$(".block").animated("slideInLeft");</script>
-<script>$(".block2").animated("slideInRight", "slideInLeft");</script>		
-
 
 <script src="js/jquery.bxslider.min.js"></script>
 <script type="text/javascript">
@@ -136,6 +125,22 @@
 		  });
 		});
 </script>
+
+<script>
+		$('.menu-icon').bind('click', function() {
+   	 		$('.container4').toggleClass('show-menu');
+   			$('.container4').toggleClass('active');
+   			
+		});
+	</script>	
+
+<script>
+		$('.menu-icon').bind('click', function() {
+   	 		$('.menu').toggleClass('show-menu');
+   			$('.menu').toggleClass('active');
+   			
+		});
+	</script>
 
 </body>
 </html>

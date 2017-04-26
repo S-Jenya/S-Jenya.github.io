@@ -27,28 +27,8 @@
 		
 	<body>  
 
-		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-
-			<ul class="nav navbar-nav">
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Меню <b class="caret"></b></a>
-					<ul class="dropdown-menu">
-						<li><a href="index.html">Главная страница</a></li>
-						<li class="divider"></li>
-						<li><a href="Ecology.html">Экология в изобретениях Николы Тесла</a></li>
-						<li class="divider"></li>
-						<li><a href="#">Историческая справка</a></li>
-						<li class="divider"></li>
-						<li><a href="invention.html">Изобретения</a></li>
-						<li class="divider"></li>
-						<li><a href="Photos.html">Галерея</a></li>	
-					</ul>
-				</li>
-			</ul>
-		</nav>
-
-
-
+	<div class="menu-icon"><p>Меню</p></div>
+	
 		<div class="container4">
 		
 			<p >Изобретатель в области электротехники и радиотехники сербского происхождения, инженер, физик. Родился и вырос в Австро-Венгрии, в последующие годы в основном работал во Франции и США. 
@@ -127,11 +107,25 @@
 		</div>
 	</footer>
 
+	<ul class="menu">
+    	<li><a href="index.html">Главная страница</a></li>
+        <li class="divider"></li>
+        <li><a href="Ecology.html">Экология в изобретениях Николы Тесла</a></li>
+        <li class="divider"></li>
+        <li><a href="histori.html">Историческая справка</a></li>
+        <li class="divider"></li>
+        <li><a href="invention.html">Изобретения</a></li>
+        <li class="divider"></li>
+        <li><a href="Photos.html">Галерея</a></li>
+    </ul>
 
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+
+		<script src="js/1.8.2/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.easytabs/3.2.0/jquery.easytabs.min.js"></script>
 
-		<script> $('.tab-container').easytabs(); </script>
+		<script> 
+			$('.tab-container').easytabs(); 
+		</script>
 
 
 	<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
@@ -140,9 +134,19 @@
 	<script src="js/common.js"></script>
     <script src="js/bootstrap.min.js"></script>
 
-<script>$(".block").animated("slideInLeft");</script>
-<script>$(".block2").animated("slideInRight", "slideInLeft");</script>
+	<script>
+		$('.menu-icon').bind('click', function() {
+   	 		$('.container4').toggleClass('show-menu');
+   			$('.container4').toggleClass('active');		
+		});
+	</script>	
 
+	<script>
+		$('.menu-icon').bind('click', function() {
+   	 		$('.menu').toggleClass('show-menu');
+   			$('.menu').toggleClass('active');		
+		});
+	</script>
 
 	</body>
 	</html>
